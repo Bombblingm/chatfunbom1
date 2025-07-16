@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login & Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="auth-container">
+    <h2 id="form-title">Anmelden</h2>
+    <input type="text" id="username" placeholder="Benutzername" required />
+    <input type="password" id="password" placeholder="Passwort" required />
+    <button onclick="login()">Login</button>
+    <p id="toggle" onclick="toggleForm()">Noch kein Konto? Registrieren</p>
+    <p id="message"></p>
+  </div>
+
+  <div class="container" id="chat-container" style="display: none;">
+    <h2>📨 Öffentlicher Chat</h2>
+    <div id="chat-box"></div>
+    <input type="text" id="message-input" placeholder="Nachricht eingeben" />
+    <button onclick="sendMessage()">Senden</button>
+    <button onclick="logout()">Abmelden</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
